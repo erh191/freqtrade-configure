@@ -25,7 +25,7 @@ Open freqtrade repository to read
     https://www.freqtrade.io/en/stable/installation/#install-code
 
 Install necessary dependencies
-# update repository
+# update Ubuntu
 sudo apt-get update
 
 # install packages
@@ -37,5 +37,21 @@ git clone https://github.com/freqtrade/freqtrade.git
 # Enter downloaded directory
 cd freqtrade
 
-# your choice (1): novice user
+# your choice: novice user
 git checkout stable
+
+Use /setup.sh -install
+In Ubuntu, freqtrade provides the script to install freqtrade.
+# --install, Install freqtrade from scratch
+./setup.sh -i 
+
+Activate your virtual environment¶
+Each time you open a new terminal, you must run source .venv/bin/activate to activate your virtual environment.
+# activate virtual environment
+source ./.venv/bin/activate
+
+You are now ready to run the bot.
+
+# Configure your bot
+Read https://www.freqtrade.io/en/stable/configuration/ and excecute:
+freqtrade new-config --config user_data/config.json
