@@ -20,3 +20,22 @@ How to install Ubuntu on WSL
 - Set user and password.
 - Go to the ubuntu user workspace
      cd /home/erh
+
+Open freqtrade repository to read
+    https://www.freqtrade.io/en/stable/installation/#install-code
+
+Install necessary dependencies
+# update repository
+sudo apt-get update
+
+# install packages
+sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git curl
+
+# Download `develop` branch of freqtrade repository
+git clone https://github.com/freqtrade/freqtrade.git
+
+# Enter downloaded directory
+cd freqtrade
+
+# your choice (1): novice user
+git checkout stable
